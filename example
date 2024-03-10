@@ -1,0 +1,29 @@
+func add (a, b)
+    a + b
+
+
+proc main ()
+    print "Hello, world!"
+    print add (1, 2).a_field
+
+    let x = 9
+    set x = 10
+
+    disown x
+
+    scope
+        let y = 0
+
+    let another_scope = 0
+
+    if x == 0 and y == 2
+        print "Success!"
+    else
+        print "Try again next time!"
+
+    cond
+        // I am a comment!
+        x == 5 => print "X is 5"
+        x == 6 => scope
+            // This is a scope
+            print "X is 6, in a scope"

@@ -1,0 +1,13 @@
+[package]
+name = "gc_lang"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fnv = "1.0.7"
+indexmap = "2.2.5"
+logos = "0.13.0"
+misc_utils = { version = "0.1.0", path = "../misc_utils" }
+parser_helper = { git = "https://github.com/Clinery1/parser_helper.git", version = "0.3.1", features = ["logos"] }
